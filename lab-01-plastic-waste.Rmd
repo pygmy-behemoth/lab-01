@@ -45,7 +45,10 @@ ggplot(data = plastic_waste,
 *Remove this text, and add your answer for Exercise 4 here.*
 
 ```{r plastic-waste-violin}
-# remove this comment and add the code for Exercise 4 here
+ggplot(data = plastic_waste, 
+       mapping = aes(x = continent, 
+                     y = plastic_waste_per_cap)) +
+    geom_violin()
 ```
 
 ### Exercise 5
@@ -53,7 +56,7 @@ ggplot(data = plastic_waste,
 *Remove this text, and add your answer for Exercise 5 here.*
 
 ```{r plastic-waste-mismanaged}
-# remove this comment and add the code for Exercise 5 here
+ggplot(data = plastic_waste, aes(x = plastic_waste_per_cap, y = mismanaged_plastic_waste_per_cap)) + geom_point()
 ```
 
 ### Exercise 6
@@ -61,7 +64,7 @@ ggplot(data = plastic_waste,
 *Remove this text, and add your answer for Exercise 6 here.*
 
 ```{r plastic-waste-mismanaged-continent}
-# remove this comment and add the code for Exercise 6 here
+ggplot(data = plastic_waste, aes(x = plastic_waste_per_cap, y = mismanaged_plastic_waste_per_cap, fill = continent, colour = continent)) + geom_point()
 ```
 
 ### Exercise 7
